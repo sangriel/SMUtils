@@ -13,13 +13,12 @@ import UIKit
 class LoadingWindow : UIWindow {
     
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
+    override init(windowScene: UIWindowScene) {
+        super.init(windowScene: windowScene)
         self.backgroundColor = .clear
-        self.windowLevel = UIWindow.Level.normal
-        
+        self.windowLevel = UIWindow.Level.alert + 1
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

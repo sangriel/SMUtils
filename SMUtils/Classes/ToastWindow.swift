@@ -12,11 +12,10 @@ import UIKit
 class ToastWindow : UIWindow {
 
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
+    override init(windowScene: UIWindowScene) {
+        super.init(windowScene: windowScene)
         self.backgroundColor = .clear
-        self.windowLevel = UIWindow.Level.normal
+        self.windowLevel = UIWindow.Level.normal + 1
         
     }
     

@@ -21,9 +21,15 @@ public class Loading {
     
     
     public func show(){
-        if loadingWindow == nil {
-            loadingWindow = LoadingWindow(frame: UIScreen.main.bounds)
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+            print("noscene")
+            return
         }
+        
+        if loadingWindow == nil {
+            loadingWindow = LoadingWindow(windowScene: scene)
+        }
+        
         loadingWindow!.rootViewController = LoadingView(color: color)
         loadingWindow!.isHidden = false
         

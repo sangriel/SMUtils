@@ -22,9 +22,15 @@ public class Toasty {
 
     
     public func show(msg : String ,pos : pos = .bottom){
-        if toastwindow == nil {
-            toastwindow = ToastWindow(frame: UIScreen.main.bounds)
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+            print("noscene")
+            return
         }
+        
+        if toastwindow == nil {
+            toastwindow = ToastWindow(windowScene: scene)
+        }
+        
         toastwindow?.rootViewController = UIViewController()
         toastwindow!.isHidden = false
         ToastView.shared.short(view :toastwindow!,txt_msg: msg, post: pos) { [unowned self] in
