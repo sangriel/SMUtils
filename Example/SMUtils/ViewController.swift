@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             Loading.global.hide()
         }
+        
+        Toasty.global.show(msg: "test")
     
         // Do any additional setup after loading the view, typically from a nib.
         

@@ -113,7 +113,7 @@ public class MyImagePhotoPicker : NSObject {
                     print("authorization granted")
                 default: //FIXME: Implement handling for all authorizationStatus
                     DispatchQueue.main.async {
-                        ToastView.shared.short(txt_msg: "권한을 허용해주세요")
+                        Toasty.global.show(msg: "권한을 허용해주세요")
                     }
                 }
             }
@@ -181,7 +181,7 @@ extension MyImagePhotoPicker : UIImagePickerControllerDelegate,UINavigationContr
             self.openCropViewController(image: image)
         }
         else {
-            ToastView.shared.short( txt_msg: "잠시 후 시도해 주세요.")
+            Toasty.global.show(msg: "잠시 후 시도해 주세요.")
             picker.dismiss(animated: true, completion: nil)
             return
         }
@@ -213,7 +213,7 @@ extension MyImagePhotoPicker : YMSPhotoPickerViewControllerDelegate {
                     }
                 }
                 else {
-                    ToastView.shared.short(txt_msg: "사진에서 오류가 났습니다")
+                    Toasty.global.show(msg: "사진에서 오류가 났습니다")
                 }
             }
         }
@@ -225,7 +225,7 @@ extension MyImagePhotoPicker : YMSPhotoPickerViewControllerDelegate {
                         tempimg.append(rimage)
                     }
                     else {
-                        ToastView.shared.short(txt_msg: "하나 이상의 사진에서 오류가 났습니다")
+                        Toasty.global.show(msg: "하나 이상의 사진에서 오류가 났습니다")
                     }
                 }
             }

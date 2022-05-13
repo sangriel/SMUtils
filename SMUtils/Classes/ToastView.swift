@@ -14,22 +14,7 @@ open class ToastView: UILabel {
     var backView = UIView()
     var lbl = UILabel()
     let customcolor = UIColor.darkGray
-    
-    
-    lazy var keyWindow = UIApplication.shared.connectedScenes
-        .filter{ $0.activationState == .foregroundActive }
-        .map{ $0 as? UIWindowScene }
-        .compactMap{ $0 }
-        .first?.windows
-        .filter{ $0.isKeyWindow }
-        .first
-    
-    
-    
-    public enum pos {
-        case center
-        case bottom
-    }
+
     
     class var shared: ToastView {
         struct Static {
@@ -95,17 +80,14 @@ open class ToastView: UILabel {
         
         view.addSubview(overlayView)
     }
-    open func short(txt_msg:String,post : pos = .bottom) {
-        guard let keyWindow = keyWindow else {
-            print("no keywindow in ToastView")
-            return
-        }
-        
+    
+    open func short(view : UIView, txt_msg:String,post : Toasty.pos = .bottom, completion : @escaping() -> ()) {
+      
         if post == .bottom {
-            self.setupbottomView(keyWindow,txt_msg: txt_msg)
+            self.setupbottomView(view,txt_msg: txt_msg)
         }
         else {
-            self.setupcenterView(keyWindow, txt_msg: txt_msg)
+            self.setupcenterView(view, txt_msg: txt_msg)
         }
         
         //Animation
@@ -121,6 +103,7 @@ open class ToastView: UILabel {
                         self.lbl.removeFromSuperview()
                         self.overlayView.removeFromSuperview()
                         self.backView.removeFromSuperview()
+                        completion()
                     })
                 })
             }
