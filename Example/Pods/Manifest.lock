@@ -1,0 +1,57 @@
+PODS:
+  - Cache (5.3.0)
+  - CropViewController (2.6.1)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Imaginary (4.3.1):
+    - Cache (~> 5.3.0)
+  - Kingfisher (4.10.1)
+  - Lightbox (2.4.2):
+    - Imaginary (~> 4.3.1)
+  - SMUtils (1.0.4):
+    - CropViewController
+    - Kingfisher
+    - Lightbox
+    - YangMingShan
+  - YangMingShan (2.0.1):
+    - YangMingShan/YMSPhotoPicker (= 2.0.1)
+  - YangMingShan/YMSPhotoPicker (2.0.1)
+
+DEPENDENCIES:
+  - CropViewController
+  - FBSnapshotTestCase (~> 2.1.4)
+  - Kingfisher
+  - Lightbox
+  - SMUtils (from `../`)
+  - YangMingShan
+
+SPEC REPOS:
+  trunk:
+    - Cache
+    - CropViewController
+    - FBSnapshotTestCase
+    - Imaginary
+    - Kingfisher
+    - Lightbox
+    - YangMingShan
+
+EXTERNAL SOURCES:
+  SMUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Cache: 48762993ec44e1d93483c4d4a13edd18452326f4
+  CropViewController: 58fb440f30dac788b129d2a1f24cffdcb102669c
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Imaginary: 18c5bba364229eef383b925199db442e71d175e1
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Lightbox: 8837c35c1150fa0410d94296e369b432d37f18c7
+  SMUtils: b6a22b2cf89d92808a66c9e3175823fd4151efe4
+  YangMingShan: 561cfbb769e8cf679d3f23d8ae7030402ddb6495
+
+PODFILE CHECKSUM: 9fa6c3d10c57d88c782e355d9c095ad0b2c0df52
+
+COCOAPODS: 1.11.3

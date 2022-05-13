@@ -5,6 +5,10 @@ platform :ios, '9.0'
 target 'SMUtils_Example' do
   pod 'SMUtils', :path => '../'
 
+  pod 'CropViewController'
+  pod 'YangMingShan'
+  pod 'Lightbox'
+  pod 'Kingfisher'
   target 'SMUtils_Tests' do
     inherit! :search_paths
 

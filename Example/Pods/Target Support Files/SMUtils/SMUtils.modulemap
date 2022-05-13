@@ -1,0 +1,6 @@
+framework module SMUtils {
+  umbrella header "SMUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
