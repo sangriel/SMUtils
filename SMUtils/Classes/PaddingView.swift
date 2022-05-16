@@ -12,7 +12,7 @@ import UIKit
 
 public class PaddingView<Type : UIView> : UIView{
     
-    var view : Type
+    public var view : Type
     
     let stackview = UIStackView()
     

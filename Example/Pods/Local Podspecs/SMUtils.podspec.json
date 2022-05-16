@@ -1,6 +1,6 @@
 {
   "name": "SMUtils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "summary": "no description pod only for me",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/sangriel/SMUtils",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sangriel/SMUtils.git",
-    "tag": "1.0.7"
+    "tag": "1.0.8"
   },
   "platforms": {
     "ios": "13.0"
