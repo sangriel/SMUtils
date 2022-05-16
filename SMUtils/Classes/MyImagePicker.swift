@@ -28,7 +28,7 @@ public class MyImagePhotoPicker : NSObject {
     private var maxImagecount = 0
     private var currentImageCount = 0
     
-    init(viewcontroller : UIViewController, delegate : MyImagePhotoPickerDelegate){
+    public init(viewcontroller : UIViewController, delegate : MyImagePhotoPickerDelegate){
         super.init()
         self.viewcontroller = viewcontroller
         self.delegate = delegate

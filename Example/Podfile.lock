@@ -11,7 +11,7 @@ PODS:
   - Kingfisher (4.10.1)
   - Lightbox (2.4.2):
     - Imaginary (~> 4.3.1)
-  - SMUtils (1.0.6):
+  - SMUtils (1.0.7):
     - CropViewController
     - Kingfisher
     - Lightbox
@@ -49,7 +49,7 @@ SPEC CHECKSUMS:
   Imaginary: 18c5bba364229eef383b925199db442e71d175e1
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Lightbox: 8837c35c1150fa0410d94296e369b432d37f18c7
-  SMUtils: e94c4635c8720c6d47f19a39749955f010dadcf3
+  SMUtils: d68d19967a8224ed11b4b77c4d62d2f9a7c2dbd7
   YangMingShan: 561cfbb769e8cf679d3f23d8ae7030402ddb6495
 
 PODFILE CHECKSUM: 9fa6c3d10c57d88c782e355d9c095ad0b2c0df52

@@ -16,7 +16,7 @@ public class MyImageZoomView :  LightboxControllerPageDelegate, LightboxControll
     weak var viewcontroller : UIViewController?
     
     
-    init(viewcontroller : UIViewController){
+    public init(viewcontroller : UIViewController){
         self.viewcontroller = viewcontroller
     }
     

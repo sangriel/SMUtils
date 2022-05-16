@@ -16,7 +16,7 @@ public class PaddingView<Type : UIView> : UIView{
     
     let stackview = UIStackView()
     
-    init(type : Type){
+    public init(type : Type){
         self.view = type
         super.init(frame: .zero)
         self.addSubview(stackview)

@@ -26,7 +26,7 @@ public class HorizontalPager : NSObject {
     public var refreshcallback : (() -> ())?
     var maincolor : UIColor = .white
     
-    init(viewcontroller : UIViewController , presenter : PagingIndicatorViewDelegate , cv : UICollectionView,color : UIColor){
+    public init(viewcontroller : UIViewController , presenter : PagingIndicatorViewDelegate , cv : UICollectionView,color : UIColor){
         self.viewcontroller = viewcontroller
         self.presenter = presenter
         self.cv = cv
@@ -37,7 +37,7 @@ public class HorizontalPager : NSObject {
         makefooterview(isVc: true)
     }
     
-    init(viewcontroller : UIViewController , presenter : PagingIndicatorViewDelegate , cv : UICollectionView,with target : UIView,color : UIColor){
+    public init(viewcontroller : UIViewController , presenter : PagingIndicatorViewDelegate , cv : UICollectionView,with target : UIView,color : UIColor){
         self.viewcontroller = viewcontroller
         self.presenter = presenter
         self.cv = cv
@@ -47,7 +47,7 @@ public class HorizontalPager : NSObject {
         makefooterviewwithTarget(isVc : true , target : target)
     }
     
-    init(view : UIView , presenter : PagingIndicatorViewDelegate , cv : UICollectionView,color : UIColor){
+    public init(view : UIView , presenter : PagingIndicatorViewDelegate , cv : UICollectionView,color : UIColor){
         self.view = view
         self.presenter = presenter
         self.cv = cv

@@ -15,7 +15,7 @@ public class WideTapBtn: UIButton {
     /**
      마이너스로 써라
      */
-    convenience init(inset : CGFloat = -10){
+    public convenience init(inset : CGFloat = -10){
         self.init()
         self.inset = inset
     }
